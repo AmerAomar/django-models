@@ -1,5 +1,46 @@
 {% extends 'base.html' %}
 
 {% block content %}
-<h2>Home</h2>
+<style>
+  .center {
+    text-align: center;
+    margin: 0 auto;
+    max-width: 600px;
+  }
+
+  .testimonial {
+    margin-bottom: 20px;
+    padding: 10px;
+    background-color: #387dc7;
+  }
+</style>
+
+<div class="center">
+  <h2 style="margin-top: 30px; margin-bottom: 40px;">Welcome to the Snack Shop!</h2>
+  <p>Explore our delicious snacks and satisfy your cravings.</p>
+  <p>Check out our <a href="{% url 'snacksList' %}">Snacks List</a> to see what we offer.</p>
+
+  <h3>Why Choose Us?</h3>
+  <ul>
+    <li>Wide variety of snacks to choose from</li>
+    <li>Fresh and high-quality ingredients</li>
+    <li>Handpicked selection of popular and unique snacks</li>
+    <li>Convenient online ordering</li>
+    <li>Fast and reliable delivery</li>
+  </ul>
+
+  <p>At the Snack Shop, we believe that snacking should be a delightful experience. That's why we carefully curate a wide range of snacks to cater to your taste buds. Our snacks are made from the finest, freshest ingredients to ensure superior quality and flavor. Whether you're craving something sweet, savory, or indulgent, we have something for everyone.</p>
+
+  <p>Place your order today and treat yourself to a delightful snacking experience!</p>
+
+  <h3>Customer Testimonials</h3>
+  <div class="testimonial">
+    <p>"The snacks from the Snack Shop are absolutely delicious! My personal favorite is the Cheese Popcorn."</p>
+    <cite>- John D.</cite>
+  </div>
+  <div class="testimonial">
+    <p>"I love the wide variety of snacks available. It's like a paradise for snack enthusiasts!"</p>
+    <cite>- Lisa S.</cite>
+  </div>
+</div>
 {% endblock content %}
