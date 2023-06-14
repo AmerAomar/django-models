@@ -1,0 +1,11 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<h2>Snack Detail</h2>
+<hr>
+<h3>Name: {{snacks.name}}</h3>
+<h3>User: {{snacks.purchaser}}</h3>
+<h3>Description: {{snacks.description}}</h3>
+<hr>
+<a href="{% url 'snacksList' %}" style="color: dodgerblue; text-decoration: none; font-size: 16px;">Back to Snacks list</a>
+{% endblock content %}

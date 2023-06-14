@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>snacks tracker</title>
+</head>
+<body style="background-color: gainsboro;">
+
+    <header>
+<nav style="text-align: center;">
+    <a href="{% url 'home' %}" style="text-decoration: none; margin-right: 10px;  color: rgba(18, 119, 197, 0.777); font-size: 25px;">Home</a>
+    <a href="{% url 'about' %}"style="text-decoration: none; margin-left: 10px; color: rgba(18, 119, 197, 0.777); font-size: 25px;">About Us</a>
+    <a href="{% url 'snacksList' %}"style="text-decoration: none; margin-left: 10px; color: rgba(18, 119, 197, 0.777); font-size: 25px;">Snack list</a>
+</nav>
+    </header>
+
+
+    <main>
+        {% block content %}
+        {% endblock content %}
+
+    </main>
+
+
+    <footer>
+
+    </footer>
+
+
+</body>
+</html>
